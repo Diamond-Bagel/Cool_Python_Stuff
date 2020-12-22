@@ -12,6 +12,7 @@ def foo():
 # The type() function can return a variety of things 
 print(type(1))                        # returns 'int'
 print(type(1.0))                      # returns 'float'
+print(type(5j))                       # returns 'complex'
 print(type('1'))                      # returns 'string'
 print(type([1]))                      # returns 'list'
 print(type({'1': 1}))                 # returns 'dict'
