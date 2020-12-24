@@ -22,13 +22,13 @@ print(type(None))                     # returns 'NoneType'
 print(type(print))                    # returns 'builtin_function_or_method'
 print(type(print()))                  # returns 'NoneType'
 print(type(math))                     # returns 'module'
-pritn(type(thing))                    # returns 'type'
+print(type(Thing))                    # returns 'type'
 
 # using type() on called functions returns what said function returns
 print(type(foo())                     # returns 'float'
 
 # These return '__main__.(class_name)'
-print(type(thing()))                  # returns '__main__.thing'
+print(type(Thing()))                  # returns '__main__.thing'
 print(type(obj))                      # returns '__main__.thing'
 
 # Opening files
