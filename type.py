@@ -40,13 +40,13 @@ f.close()
       
 # Example
 def calc_radius(r : float) -> float:
-	'''
+  '''
   Takes an integer/float radius, returns circumference
 
-	Raises corresponding errors
+  Raises corresponding errors
   '''
-	if type(r) not in [int, float]:
-		raise TypeError("Radius must be a non-negative real number")
-	if r < 0:
-		raise ValueError("Radius cannot be negative")
-	return math.pi*(r*2)
+  if type(r) not in [int, float]:
+    raise TypeError("Radius must be a non-negative real number")
+  if r < 0:
+    raise ValueError("Radius cannot be negative")
+  return math.pi*(r*2)
