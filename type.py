@@ -36,3 +36,17 @@ f = open('file.txt', 'w')
 print(type(f))                        # returns 'io.TextIOWrapper'  (returned for all file types)
 print(type(f.write("function")))      # returns 'int'   (idk why)
 f.close()
+
+      
+# Example
+def calc_radius(r : float) -> float:
+	'''
+  Takes an integer/float radius, returns circumference
+
+	Raises corresponding errors
+  '''
+	if type(r) not in [int, float]:
+		raise TypeError("Radius must be a non-negative real number")
+	if r < 0:
+		raise ValueError("Radius cannot be negative")
+	return math.pi*(r*2)
